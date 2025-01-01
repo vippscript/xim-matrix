@@ -1,4 +1,6 @@
 
+html
+نسخ الكود
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -19,95 +21,188 @@
 
    
     <title>XIM MATRIX - جهاز متميز يجمع بين أحدث التقنيات مثل Smart Translator (تقنية الترجمة الذكية لتحسين دقة التصويب).</title>
+
     <style>
-                @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+    
         /* إعدادات عامة للجسم */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #181818;
-    color: #fff;
-    text-align: center; /* توسيط النصوص */
-}
-
-h2 {
-    color: #00ffcc; /* تغيير لون العناوين */
-}
-
-/* تنسيق قسم المميزات */
-.features {
-    background: #292929;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
-}
-
-.settings {
-    background: #292929;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-    padding: 10px;
-    background: #383838;
-    border-left: 5px solid #00ffcc;
-}
-
-/* تنسيق الصورة داخل الأقسام */
-.settings-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* تخصيص التنسيق لأجهزة الجوال */
-@media (max-width: 768px) {
-    /* لضبط النصوص عند الشاشات الصغيرة */
-    h2 {
-        font-size: 1.5em; /* تقليل حجم العنوان */
-    }
-
-    ul li {
-        font-size: 1em; /* ضبط حجم الخط في القائمة */
-    }
-
-    /* لتناسب الصورة على الأجهزة الصغيرة */
-    .settings-image img {
-        width: 100%; /* جعل الصورة تأخذ العرض الكامل */
-        height: auto; /* الحفاظ على النسبة الأصلية للصورة */
-    }
-}
-
-/* تخصيص الخطوط والأبعاد على الشاشات الصغيرة جدًا */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px; /* تقليل حجم النصوص بشكل عام */
-    }
-
-    .features, .settings {
-        padding: 10px; /* تقليل المسافة داخل الأقسام */
-    }
-
-    h2 {
-        font-size: 1.2em; /* تقليل حجم العنوان بشكل أكبر */
-    }
-}
-
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            user-select: none; /* تعطيل النسخ */
+        }
+    
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+    
+        h1, h2, h3, h4, h5 {
+            color: #ffa500;
+            text-align: center;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+    
+        p, ul, li, a {
+            color: #bbbbbb;
+            text-align: center;
+        }
+    
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    
+        .button {
+            background-color: #292929;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+    
+        .button:hover {
+            background-color: #686868;
+        }
+    
+        /* تخصيص التنسيق للأقسام */
+        .section {
+            background: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+    
+        .section:hover {
+            background-color: #333;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+        }
+    
+        .section h2, .section h3 {
+            color: #ffa500;
+            margin: 20px 0;
+        }
+    
+        .section a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+    
+        .section a:hover {
+            color: #fc3200;
+        }
+    
+        /* تخصيص التنسيق لأجهزة الجوال */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+    
+            h2 {
+                font-size: 1.8em;
+            }
+    
+            .section {
+                padding: 15px;
+            }
+    
+            ul li {
+                font-size: 1em;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+    
+            h2 {
+                font-size: 1.5em;
+            }
+    
+            ul li {
+                font-size: 0.9em;
+            }
+        }
+    
+        .reviews {
+            margin-top: 40px;
+            text-align: left;
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    
+        .reviews h2 {
+            color: #ffa500;
+            margin-bottom: 20px;
+        }
+    
+        .reviews h2::after {
+            content: '★★★★★';
+            color: #ffa500;
+            margin-right: 10px;
+        }
+    
+        .review {
+            background-color: #2e2e2e;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    
+        .review p {
+            margin: 5px 0;
+        }
+    
+        .review strong {
+            color: #4d237c;
+        }
+    
+        /* تنسيق الصورة في قسم التخفيضات */
+        .promo-img {
+            width: 100%; /* الصورة تأخذ العرض الكامل للقسم */
+            max-width: 300px; /* تحديد الحد الأقصى للعرض */
+            height: auto; /* الحفاظ على النسبة الأصلية للصور */
+            display: block; /* تأكيد أن الصورة تعرض ككتلة */
+            margin: 0 auto; /* توسيط الصورة داخل الرابط */
+            border-radius: 10px; /* إضافة حواف دائرية للصورة */
+        }
+    
         .popup {
             display: none;
             position: fixed;
@@ -130,7 +225,7 @@ ul li {
             text-align: center;
             position: relative; /* لتموضع العناصر الداخلية */
         }
-
+    
         .close-btn {
             background-color: #00ffcc;
             color: #181818;
@@ -141,276 +236,61 @@ ul li {
             cursor: pointer;
             margin-top: 10px;
         }
-
+    
         .close-btn:hover {
             background-color: #00e6b3;
         }
+    
         /* تنسيق المربع */
-.advertisement {
-    background: #292929;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid #00ffcc;
-    max-width: 800px;
-}
-
-/* تنسيق الصورة داخل المربع */
-.advertisement-image img {
-    width: 100%; /* اجعل الصورة تأخذ العرض الكامل */
-    height: auto; /* احتفظ بنسبة الأبعاد الأصلية */
-    border-radius: 5px;
-    margin-bottom: 15px; /* المسافة بين الصورة والنص */
-}
-
-/* تنسيق النص داخل المربع */
-.advertisement p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* تنسيق الرابط داخل المربع */
-.advertisement a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #00ffcc;
-    color: #181818;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-/* تغيير لون الرابط عند التمرير عليه */
-.advertisement a:hover {
-    background: #00e6b3;
-}
-
-/* تخصيص التنسيق لأجهزة الجوال */
-@media (max-width: 768px) {
-    .advertisement {
-        padding: 15px;
-    }
-
-    .advertisement p {
-        font-size: 1em;
-    }
-}
-/* تنسيق قسم الإعدادات */
-.settings {
-    background: #292929;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
-    color: white;
-}
-
-/* تنسيق الصورة داخل قسم الإعدادات */
-.settings-image img {
-    width: 100%; /* اجعل الصورة تأخذ العرض الكامل */
-    height: auto; /* احتفظ بنسبة الأبعاد الأصلية */
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* تخصيص التنسيق لأجهزة الجوال */
-@media (max-width: 768px) {
-    .settings {
-        padding: 15px;
-    }
-
-    .settings h2 {
-        font-size: 1.5em;
-    }
-
-    .settings ul li {
-        font-size: 1em;
-    }
-
-    .settings-image img {
-        width: 100%; /* تأكد أن الصورة تتناسب مع العرض */
-        height: auto;
-    }
-}
-video {
-            width: 100%;  /* جعل الفيديو يأخذ العرض الكامل */
-            height: auto; /* الحفاظ على نسبة الأبعاد الأصلية */
-            border: none; /* إزالة الإطار */
-        }
-        
-        
-
-
-        /* إعدادات عامة للجسم */
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            flex-direction: column;
-            user-select: none; /* تعطيل النسخ */
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            position: relative;
-        }
-
-        h1, h2, h3, h4, h5 {
-            color: #ffa500;
-            text-align: center;
-            margin: 20px 0;
-            cursor: pointer;
-        }
-
-        p, ul, li, a {
-            color: #bbbbbb;
-            text-align: center;
-        }
-
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
+        .advertisement {
+            background: #292929;
             margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #00ffcc;
+            max-width: 800px;
         }
-
-        .button {
-            background-color: #00ffcc;
-            color: #181818;
+    
+        /* تنسيق الصورة داخل المربع */
+        .advertisement-image img {
+            width: 100%; /* اجعل الصورة تأخذ العرض الكامل */
+            height: auto; /* احتفظ بنسبة الأبعاد الأصلية */
+            border-radius: 5px;
+            margin-bottom: 15px; /* المسافة بين الصورة والنص */
+        }
+    
+        /* تنسيق النص داخل المربع */
+        .advertisement p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+    
+        /* تنسيق الرابط داخل المربع */
+        .advertisement a {
+            display: inline-block;
             padding: 10px 20px;
+            background: #00ffcc;
+            color: #181818;
             border-radius: 5px;
-            font-weight: bold;
             text-transform: uppercase;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-        }
-
-        .button:hover {
-            background-color: #00e6b3;
-        }
-
-        /* تخصيص التنسيق للأقسام */
-        .section {
-            background: #000000;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            transition: all 0.3s ease;
-        }
-
-        .section:hover {
-            background-color: #333;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
-        }
-
-        .section h2, .section h3 {
-            color: #ffa500;
-            margin: 20px 0;
-        }
-
-        .section a {
-            color: #ffa500;
             font-weight: bold;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+            transition: background 0.3s;
+        }.
+        .button {
+    background-color: #292929;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 10px 0; /* إضافة تباعد عمودي بين الأزرار */
+    display: inline-block; /* لعرض الأزرار بجانب بعضها */
+}
 
-        .section a:hover {
-            color: #00e6b3;
-        }
-
-        /* تخصيص التنسيق لأجهزة الجوال */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-
-            h2 {
-                font-size: 1.8em;
-            }
-
-            .section {
-                padding: 15px;
-            }
-
-            ul li {
-                font-size: 1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            ul li {
-                font-size: 0.9em;
-            }
-        }
-
-        .reviews {
-            margin-top: 40px;
-            text-align: left;
-            background-color: #000;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .reviews h2 {
-            color: #ffa500;
-            margin-bottom: 20px;
-        }
-
-        .reviews h2::after {
-            content: '★★★★★';
-            color: #ffa500;
-            margin-right: 10px;
-        }
-
-        .review {
-            background-color: #2e2e2e;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .review p {
-            margin: 5px 0;
-        }
-
-        .review strong {
-            color: #ffa500;
-        }
+    
     </style>
 </head>
 <body>
@@ -588,5 +468,23 @@ video {
         <p>&copy; 2025 XIM MATRIX. جميع الحقوق محفوظة.</p>
         <a href="https://store.xim.tech/products/xim-matrix" target="_blank">تعرف على المزيد</a>
     </footer>
+        
+<!-- قسم موثقين بمنصة الأعمال -->
+<div class="section">
+    <h2>✔️ موثقين بمنصة الأعمال</h2>
+    <p>نحن موثقين على منصة الأعمال الرسمية في المملكة العربية السعودية. يمكنك الاستعلام عن توثيق المتجر من خلال الرابط التالي.</p>
+
+    <!-- إضافة الشعار الخاص بمنصة الأعمال -->
+    <div class="section-image">
+        <img src="https://cdn.saudibusiness.gov.sa/v2/dist//images/headerIcons/Logo.svg" alt="منصة الأعمال">
+    </div>
+
+    <p><strong>اسم المتجر:</strong> VIP SCRIPT</p>
+    <p><strong>رقم الوثيقة:</strong> FL-772289463</p>
+    <p><strong>رقم التوثيق:</strong> 0000125463</p>
+
+    <!-- رابط الاستعلام -->
+    <a href="https://eauthenticate.saudibusiness.gov.sa/inquiry" class="button" target="_blank">🔗 استعلام عن التوثيق</a>
+</div>
 </body>
 </html>
