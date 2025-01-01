@@ -1,30 +1,19 @@
-
-html
-نسخ الكود
 <!DOCTYPE html>
 <html lang="ar">
-<head>
-    <!-- تحديد الترميز الخاص بالصفحة -->
-    <meta charset="UTF-8">
-
-    <!-- لضمان أن الصفحة تظهر بشكل صحيح على أجهزة الجوال -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- وصف للصفحة يساعد محركات البحث على فهم محتوى الصفحة -->
-    <meta name="description" content="XIM MATRIX - جهاز متقدم لتعزيز تجربة الألعاب، يدعم PS5, PC, Xbox مع تقنيات Smart Translator و Smart Actions لتحسين الأداء.">
-
-    <!-- كلمات مفتاحية تساعد محركات البحث على تحسين نتائج البحث -->
-    <meta name="keywords" content="XIM MATRIX, ألعاب الشوتر, تحسين التصويب, Xbox, Playstation, PC, Smart Translator, Smart Actions, ASISST AIM , تحسين الأداء">
-
-    <!-- تحديد اسم الكاتب أو الفريق المسؤول عن تطوير الصفحة -->
-    <meta name="author" content="XIM MATRIX Team">
-
-   
-    <title>XIM MATRIX - جهاز متميز يجمع بين أحدث التقنيات مثل Smart Translator (تقنية الترجمة الذكية لتحسين دقة التصويب).</title>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>XIM MATRIX | حلول متقدمة لتحسين الأداء في الألعاب</title>
+        <meta name="description" content="XIM MATRIX - جهاز متقدم لتعزيز تجربة الألعاب، يدعم PS5, PC, Xbox مع تقنيات Smart Translator و Smart Actions لتحسين الأداء.">
+        <meta name="keywords" content="XIM MATRIX, تحسين التصويب, Smart Translator, أداء الألعاب, أجهزة الألعاب, التوافق, PlayStation, Xbox">
+        <meta name="author" content="XIM MATRIX NAIF ALOTAIBI">
+        <meta property="og:title" content="XIM MATRIX | تقنيات متقدمة للاعبين">
+        <meta property="og:description" content="اكتشف كيف يمكن لـ XIM MATRIX تحسين دقة التصويب في الألعاب مع تقنية Smart Translator.">
+        <meta property="og:image" content="https://i.imgur.com/znwWCkj.png">
+        <meta property="og:url" content="https://vip-script.com/xim-matrix">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-    
+
         /* إعدادات عامة للجسم */
         body {
             font-family: 'Cairo', sans-serif;
@@ -40,7 +29,7 @@ html
             flex-direction: column;
             user-select: none; /* تعطيل النسخ */
         }
-    
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -51,35 +40,35 @@ html
             text-align: center;
             position: relative;
         }
-    
+
         h1, h2, h3, h4, h5 {
             color: #ffa500;
             text-align: center;
             margin: 20px 0;
             cursor: pointer;
         }
-    
+
         p, ul, li, a {
             color: #bbbbbb;
             text-align: center;
         }
-    
+
         a {
             color: #1a73e8;
             text-decoration: none;
         }
-    
+
         a:hover {
             text-decoration: underline;
         }
-    
+
         img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 20px auto;
         }
-    
+
         .button {
             background-color: #292929;
             color: #ffffff;
@@ -90,11 +79,11 @@ html
             transition: background-color 0.3s ease;
             text-decoration: none;
         }
-    
+
         .button:hover {
             background-color: #686868;
         }
-    
+
         /* تخصيص التنسيق للأقسام */
         .section {
             background: #000000;
@@ -104,61 +93,61 @@ html
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             transition: all 0.3s ease;
         }
-    
+
         .section:hover {
             background-color: #333;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
         }
-    
+
         .section h2, .section h3 {
             color: #ffa500;
             margin: 20px 0;
         }
-    
+
         .section a {
             color: #ffffff;
             font-weight: bold;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-    
+
         .section a:hover {
             color: #fc3200;
         }
-    
+
         /* تخصيص التنسيق لأجهزة الجوال */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5em;
             }
-    
+
             h2 {
                 font-size: 1.8em;
             }
-    
+
             .section {
                 padding: 15px;
             }
-    
+
             ul li {
                 font-size: 1em;
             }
         }
-    
+
         @media (max-width: 480px) {
             h1 {
                 font-size: 2em;
             }
-    
+
             h2 {
                 font-size: 1.5em;
             }
-    
+
             ul li {
                 font-size: 0.9em;
             }
         }
-    
+
         .reviews {
             margin-top: 40px;
             text-align: left;
@@ -166,33 +155,33 @@ html
             padding: 20px;
             border-radius: 10px;
         }
-    
+
         .reviews h2 {
             color: #ffa500;
             margin-bottom: 20px;
         }
-    
+
         .reviews h2::after {
             content: '★★★★★';
             color: #ffa500;
             margin-right: 10px;
         }
-    
+
         .review {
             background-color: #2e2e2e;
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 10px;
         }
-    
+
         .review p {
             margin: 5px 0;
         }
-    
+
         .review strong {
             color: #4d237c;
         }
-    
+
         /* تنسيق الصورة في قسم التخفيضات */
         .promo-img {
             width: 100%; /* الصورة تأخذ العرض الكامل للقسم */
@@ -202,7 +191,7 @@ html
             margin: 0 auto; /* توسيط الصورة داخل الرابط */
             border-radius: 10px; /* إضافة حواف دائرية للصورة */
         }
-    
+
         .popup {
             display: none;
             position: fixed;
@@ -215,7 +204,7 @@ html
             justify-content: center;
             align-items: center;
         }
-    
+
         .popup-content {
             background: white;
             padding: 20px;
@@ -225,7 +214,7 @@ html
             text-align: center;
             position: relative; /* لتموضع العناصر الداخلية */
         }
-    
+
         .close-btn {
             background-color: #00ffcc;
             color: #181818;
@@ -236,11 +225,11 @@ html
             cursor: pointer;
             margin-top: 10px;
         }
-    
+
         .close-btn:hover {
             background-color: #00e6b3;
         }
-    
+
         /* تنسيق المربع */
         .advertisement {
             background: #292929;
@@ -251,7 +240,7 @@ html
             border: 2px solid #00ffcc;
             max-width: 800px;
         }
-    
+
         /* تنسيق الصورة داخل المربع */
         .advertisement-image img {
             width: 100%; /* اجعل الصورة تأخذ العرض الكامل */
@@ -259,13 +248,13 @@ html
             border-radius: 5px;
             margin-bottom: 15px; /* المسافة بين الصورة والنص */
         }
-    
+
         /* تنسيق النص داخل المربع */
         .advertisement p {
             font-size: 1.2em;
             margin: 10px 0;
         }
-    
+
         /* تنسيق الرابط داخل المربع */
         .advertisement a {
             display: inline-block;
@@ -276,33 +265,140 @@ html
             text-transform: uppercase;
             font-weight: bold;
             transition: background 0.3s;
-        }.
-        .button {
-    background-color: #292929;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    margin: 10px 0; /* إضافة تباعد عمودي بين الأزرار */
-    display: inline-block; /* لعرض الأزرار بجانب بعضها */
-}
+        }
 
-    
+        .button {
+            background-color: #292929;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin: 10px 0; /* إضافة تباعد عمودي بين الأزرار */
+            display: inline-block; /* لعرض الأزرار بجانب بعضها */
+        }
+
+        /* Responsive Video */
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Popup Video */
+        .popup-video {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-video-content {
+            width: 90%;
+            max-width: 800px;
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .popup-video-content video {
+            width: 100%;
+            height: auto;
+        }
+
+        .close-video-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .close-video-btn:hover {
+            background-color: #cc0000;
+        }
+
+        /* Initial Message */
+        .initial-message {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            z-index: 1002;
+            display: none; /* Initially hidden */
+        }
+
+        .initial-message p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .initial-message .buttons {
+            margin-top: 20px;
+        }
+
+        .initial-message .buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .initial-message .buttons .accept {
+            background-color: green;
+            color: white;
+        }
+
+        .initial-message .buttons .reject {
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <!-- Initial Message -->
+    <div class="initial-message" id="initial-message">
+        <p>هناك احتمالية حصولك على كوبون</p>
+        <div class="buttons">
+            <button class="accept" onclick="acceptOffer()">انتقال</button>
+            <button class="reject" onclick="rejectOffer()">رفض</button>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <div class="header">
                 <p>برمجـه وتطوير VIP-SCRIPT.COM</p>
                 <p>نـــــــايف العـــتيبي - VIP</p>
                 <p>Wed, Jul 10, 2024 3:26 PM</p>
-                <h1>قسم XIM MATRIX SMART VIP</h1>
+                <h1>قسم الماتريكس -XIM MATRIX</h1>
             </div>
-    
+
         <h1>XIM MATRIX - مميزات متقدمة</h1>
         <p>تعرف على مميزات الجهاز الذي سيغير تجربتك في الألعاب تمامًا.</p>
     </header>
@@ -338,19 +434,17 @@ html
             <li>إعدادات دقيقة للشخصيات في Overwatch.</li>
             <li>منحنيات باليستية لتعزيز التصويب في Apex Legends.</li>
         </ul>
-
     </section>
-    
-    <video src="https://m-r.pw/MASTER" autoplay="" loop="" muted=""></video>
+
+    <video src="https://m-r.pw/MASTER" autoplay loop muted></video>
     <section class="profile">
         <h2>اطلب بروفايل XIM MATRIX - ارتقِ بأدائك! 🎮🔥</h2>
         <p>هل ترغب في التفوق في ألعاب الشوتر؟ استمتع بأداء دقيق مع بروفايلات XIM MATRIX المميزة!</p>
-            
+
         <!-- إضافة الصورة داخل قسم الإعدادات -->
         <div class="settings-image">
             <img src="https://cdn.salla.sa/aVAoA/d7b75f63-bf76-4e38-963f-1bbf6139c538-1000x1000-l7JZ8WPw81gXzQasNo8cLnMd0naEzbyffq9NSNzn.png" alt="XIM MATRIX" />
-            <video src="https://m-r.pw/up/Titf.mp4" autoplay="" loop="" muted=""></video>
-
+            <video src="https://m-r.pw/up/Titf.mp4" autoplay loop muted></video>
         </div>
         <h3>كيفية الطلب:</h3>
         <ul>
@@ -380,7 +474,6 @@ html
         </ul>
     </section>
 
-
     <section class="overview">
         <h2>نظرة عامة على XIM MATRIX</h2>
         <p>XIM MATRIX هو جهاز مبتكر يوفر تجربة لعب متفوقة للاعبين.</p>
@@ -402,9 +495,9 @@ html
     <section class="guides">
         <h2>الشروحات والدعم</h2>
         <ul>
-            <li>تحديث الجهاز</a></li>
-            <li>تركيب البروفايل: نسخ ولصق الإعدادات.</li>
-            <li>>شرح التعامل والتفعيلات </a></li>
+            <li><a href="#">تحديث الجهاز</a></li>
+            <li><a href="#">تركيب البروفايل: نسخ ولصق الإعدادات.</a></li>
+            <li><a href="#">شرح التعامل والتفعيلات</a></li>
         </ul>
     </section>
 
@@ -419,13 +512,9 @@ html
         <div class="popup-content">
             <!-- محتوى النافذة -->
             <img src="https://i.ibb.co/PFLbKcp/image.jpg" alt="إعلان" style="width: 100%; height: auto; border-radius: 10px;">
-            <p style="margin-top: 20px; font-size: 16px; color: #333;">هل ترغب كوبون تخفيض؟ انتقل لصفحة الاعلان 
-              
-                
-                
-                
-                
-                </p>
+            <p style="margin-top: 20px; font-size: 16px; color: #333;">هل ترغب كوبون تخفيض؟ انتقل لصفحة الاعلان
+
+                 </p>
             <div class="buttons">
                 <!-- زر رفض الإعلان -->
                 <button onclick="closePopup()" class="btn reject" style="padding: 10px 20px; background-color: red; color: white; border: none; border-radius: 5px; cursor: pointer;">رفض</button>
@@ -438,53 +527,84 @@ html
             </div>
         </div>
     </div>
-    
 
-    
+    <div id="popup-video" class="popup-video">
+        <div class="popup-video-content">
+            <video src="https://m-r.pw/up/Titf.mp4" autoplay loop muted></video>
+            <button onclick="closeVideoPopup()" class="close-video-btn">×</button>
+        </div>
+    </div>
+
     <script>
-        // عرض الإعلان بعد 5 ثوانٍ
+        // عرض الإعلان بعد 10 ثوانٍ
         window.onload = function() {
+            const initialMessage = document.getElementById('initial-message');
             const popup = document.getElementById('popup');
             const countdownNumber = document.getElementById('countdown-number');
-    
+
+            setTimeout(() => {
+                initialMessage.style.display = 'block'; // Show the initial message after 10 seconds
+            }, 10000);
+
             let countdown = 5; // الوقت بالثواني
             const countdownInterval = setInterval(() => {
                 countdown--; // تقليل العد التنازلي
                 countdownNumber.textContent = countdown; // تحديث الرقم في الدائرة
-    
+
                 if (countdown === 0) {
                     clearInterval(countdownInterval); // إيقاف العداد
                     popup.style.display = 'flex'; // عرض النافذة المنبثقة
                 }
-            }, 1000); // تحديث كل ثانية
+            }, 100000); // تحديث كل ثانية
         };
-    
+
         // دالة إغلاق النافذة المنبثقة
         function closePopup() {
             document.getElementById('popup').style.display = 'none';
+        }
+
+        // دالة عرض الفيديو المنبثق
+        function showVideoPopup() {
+            document.getElementById('popup-video').style.display = 'flex';
+        }
+
+        // دالة إغلاق الفيديو المنبثق
+        function closeVideoPopup() {
+            document.getElementById('popup-video').style.display = 'none';
+        }
+
+        // دالة قبول العرض
+        function acceptOffer() {
+            document.querySelector('.initial-message').style.display = 'none';
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        // دالة رفض العرض
+        function rejectOffer() {
+            document.querySelector('.initial-message').style.display = 'none';
         }
     </script>
     <footer>
         <p>&copy; 2025 XIM MATRIX. جميع الحقوق محفوظة.</p>
         <a href="https://vip-script.com/" target="_blank">تعرف على المزيد</a>
     </footer>
-        
-<!-- قسم موثقين بمنصة الأعمال -->
-<div class="section">
-    <h2>✔️ موثقين بمنصة الأعمال</h2>
-    <p>نحن موثقين على منصة الأعمال الرسمية في المملكة العربية السعودية. يمكنك الاستعلام عن توثيق المتجر من خلال الرابط التالي.</p>
 
-    <!-- إضافة الشعار الخاص بمنصة الأعمال -->
-    <div class="section-image">
-        <img src="https://cdn.saudibusiness.gov.sa/v2/dist//images/headerIcons/Logo.svg" alt="منصة الأعمال">
+    <!-- قسم موثقين بمنصة الأعمال -->
+    <div class="section">
+        <h2>✔️ موثقين بمنصة الأعمال</h2>
+        <p>نحن موثقين على منصة الأعمال الرسمية في المملكة العربية السعودية. يمكنك الاستعلام عن توثيق المتجر من خلال الرابط التالي.</p>
+
+        <!-- إضافة الشعار الخاص بمنصة الأعمال -->
+        <div class="section-image">
+            <img src="https://cdn.saudibusiness.gov.sa/v2/dist//images/headerIcons/Logo.svg" alt="منصة الأعمال">
+        </div>
+
+        <p><strong>اسم المتجر:</strong> VIP SCRIPT</p>
+        <p><strong>رقم الوثيقة:</strong> FL-772289463</p>
+        <p><strong>رقم التوثيق:</strong> 0000125463</p>
+
+        <!-- رابط الاستعلام -->
+        <a href="https://eauthenticate.saudibusiness.gov.sa/inquiry" class="button" target="_blank">🔗 استعلام عن التوثيق</a>
     </div>
-
-    <p><strong>اسم المتجر:</strong> VIP SCRIPT</p>
-    <p><strong>رقم الوثيقة:</strong> FL-772289463</p>
-    <p><strong>رقم التوثيق:</strong> 0000125463</p>
-
-    <!-- رابط الاستعلام -->
-    <a href="https://eauthenticate.saudibusiness.gov.sa/inquiry" class="button" target="_blank">🔗 استعلام عن التوثيق</a>
-</div>
 </body>
 </html>
